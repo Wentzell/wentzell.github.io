@@ -2,27 +2,36 @@
 <!--
   flatironinstitute.org
   -->
-<html>
+<html lang="en">
   <head>
-    <!-- TODO: Add your name -->
     <title>Nils Wentzell | Flatiron Institute</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      content="width=device-width, initial-scale=1"
     />
-    <!-- TODO: If you wish to use your center color scheme, please replace main.css with the center acronymn ex:
-      cca.css, ccb.css, etc
-    -->
+    <meta
+      name="description"
+      content="Nils Wentzell is a Research Scientist at the Flatiron Institute, where he develops high-performance scientific software for quantum many-body physics in modern C++ and Python. He is the lead developer of TRIQS."
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nils Wentzell | Flatiron Institute" />
+    <meta
+      property="og:description"
+      content="Research Scientist at the Flatiron Institute, developing high-performance scientific software for quantum many-body physics in modern C++ and Python. Lead developer of TRIQS."
+    />
+    <meta property="og:url" content="https://wentzell.github.io/" />
+    <meta property="og:image" content="https://wentzell.github.io/images/avatar.jpg" />
+    <meta name="twitter:card" content="summary" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body class="is-preload">
     <!-- Header -->
     <header id="header">
       <div class="inner">
-        <!-- TODO: Add a personal photo in /images folder or switch src link to avatar.jpg for a gray circle -->
         <a href="#" class="image avatar"
-          ><img src="images/avatar.jpg" alt=""
+          ><img src="images/avatar.jpg" alt="Portrait of Nils Wentzell" width="600" height="600"
         /></a>
       </div>
       <nav id="nav">
@@ -36,13 +45,6 @@
           </li>
           <li>
             <a
-              href="#research"
-              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
-              >Research</a
-            >
-          </li>
-          <li>
-            <a
               href="#software"
               style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
               >Software</a
@@ -50,9 +52,32 @@
           </li>
           <li>
             <a
+              href="#research"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >Research</a
+            >
+          </li>
+          <li>
+            <a
               href="#papers"
               style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
               >Papers</a
+            >
+          </li>
+          <li>
+            <a
+              href="#teaching"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >Teaching</a
+            >
+          </li>
+          <li>
+            <a
+              href="pdfs/resume_nils_wentzell.pdf"
+              target="_blank"
+              rel="noreferrer noopener"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >Resume</a
             >
           </li>
           <li>
@@ -70,10 +95,8 @@
       <!-- About -->
       <section id="about">
         <header class="major">
-          <!-- TODO: Add your name -->
-          <h2>Nils Wentzell, Ph.D.</h2>
+          <h1>Nils Wentzell, Ph.D.</h1>
         </header>
-        <!-- TODO: Add your own bio -->
         <p>
           I am a Research Scientist at the
           <a
@@ -81,125 +104,80 @@
             rel="noreferrer noopener"
             target="_blank"
             >Center for Computational Quantum Physics (CCQ)</a
-          >
-          at the
+          >, part of the
           <a
             href="https://www.simonsfoundation.org/flatiron/"
             rel="noreferrer noopener"
             target="_blank"
-            >Flatiron Institute.</a
-          >
-          My work revolves around developing and implementing cutting-edge computational techniques to tackle the
-          quantum many-body problem in condensed matter physics. I specialize in various numerical methods, including
-          Dynamical Mean-Field Theory, Continuous-time Quantum Monte Carlo, Exact Diagonalization, Functional Renormalization Group,
-          and Diagrammatic Perturbation Theory. Additionally, I am passionate about modern open-source software development,
-          particularly using C++ and Python, with a strong emphasis on high-performance computing and parallel programming.
-          Currently, I lead the development of the
+            >Flatiron Institute</a
+          >. I write software libraries for scientific computing in modern C++ and Python,
+          pairing intuitive, composable APIs with high performance.
+        </p>
+        <p>
+          The heart of my work is
           <a
-            href="https://triqs.github.io/triqs/latest/"
+            href="https://triqs.github.io"
             rel="noreferrer noopener"
             target="_blank"
             >TRIQS</a
-          >
-          open-source software library at CCQ.
-          I obtained my M.Sc. in physics from RWTH Aachen University and my Ph.D. from the University of Tübingen in Germany.
+          >, an open-source software stack I lead, used by research groups around the world to
+          study interacting quantum systems. Thanks to its C++ and Python libraries, the TRIQS
+          team and its community have developed and implemented a variety of quantum many-body
+          algorithms, ranging from quantum impurity solvers to embedding schemes for interacting
+          lattice models.
         </p>
-      </section>
-      <!-- Research -->
-      <section id="research">
-        <h2>Research</h2>
-        <!-- TODO: Replace with project info and choose image type -->
-        <div class="row">
-          <article class="col-6 col-12-xsmall work-item">
-            <h3>Quantum Embedding</h3>
-            <p>
-              Quantum embedding methods such as the "Dynamical Mean Field Theory" (DMFT)
-              describe a solid in terms of an atom embedded in its electronic environment,
-              and have lead to major advances in our understanding of strongly correlated materials.
-              I worked on so-called cluster extensions of DMFT, which aim to overcome
-              the limitations of the original DMFT approach by including non-local correlations.
-            </p>
-          </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <img class="image fit" src="images/Embedding.png" alt="" />
-          </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <h3>Impurity Solvers</h3>
-            <p>
-              In Quantum impurity models a few atomic degrees of freedom interact with a reservoir of electrons.
-              They serve as prototypes for studying open quantum systems, and play a central role in embedding methods like DMFT.
-              Numerically solving these models is challenging and often the computational bottleneck.
-              I worked on both algorithmic development and implementation for various flavors of quantum impurity solvers,
-              including continuous-time Quantum Monte-Carlo, exact diagonalization and tensor-network based solvers.<br><br>
-            </p>
-          </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <img class="image fit" src="images/SIAM.png" alt="" />
-          </article>
-          <!--<article class="col-6 col-12-xsmall work-item">-->
-            <!--<h3>Diagrammatic Methods</h3>-->
-            <!--<p>-->
-	      <!--Feynman diagrams are a powerful tool to visualize and reason about physical scattering processes,-->
-	      <!--fRG-->
-	      <!--bethe-salpeter-->
-	      <!--parquet-->
-            <!--</p>-->
-          <!--</article>-->
-          <!--<article class="col-6 col-12-xsmall work-item">-->
-            <!--<img class="image fit" src="images/Diagram.png" alt="" />-->
-          <!--</article>-->
-          <article class="col-6 col-12-xsmall work-item">
-            <h3>Vertex Functions</h3>
-            <p>
-              Vertex functions are the mathematical objects that encode effective interactions
-              between particles in a many-body systems.
-              They are numerically challenging due to their large storage size and the high
-              computational cost of the algorithms, but are often crucial to the description
-              of fascinating material properties, such as high-temperature superconductivity.
-              <br>I worked both on algorithmic development and implementation of vertex-based algorithms
-              such as the TRILEX method.
-            </p>
-          </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <img class="image fit" src="images/Vertex.png" alt="" />
-          </article>
-        </div>
+        <p>
+          I joined the TRIQS core team at CEA Saclay in 2016, and started my role at the Flatiron
+          Institute two years later. Before that I obtained my M.Sc. in physics at RWTH Aachen
+          University and my Ph.D. from the University of Tübingen.
+        </p>
+        <ul class="actions">
+          <li>
+            <a
+              href="pdfs/resume_nils_wentzell.pdf"
+              rel="noreferrer noopener"
+              target="_blank"
+              class="button"
+              >Resume (PDF)</a
+            >
+          </li>
+        </ul>
       </section>
       <!-- Software -->
       <section id="software">
         <h2>Software</h2>
-        <!-- TODO: Add Software  -->
         <div class="row">
           <article class="col-6 col-12-xsmall work-item">
             <p>
-              I am very passionate about the development of high-performance scientific software
-              using a combination of Modern C++ and Python.
-              Find below a selection of open-source scientific software projects that I actively develop.
+              Nearly all of my work is open source, written in modern C++ with first-class Python
+              interfaces. Below is a selection of the projects I develop and maintain.
             </p>
           </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <img class="image fit" src="images/Languages.png" alt="" />
+          <article class="col-6 col-12-xsmall work-item image-cell">
+            <img class="image fit" src="images/Languages.png" alt="C++ and Python logos" width="1564" height="482" loading="lazy" />
           </article>
           <article class="col-6 col-12-xsmall work-item">
-	    <h3>TRIQS Library</h3>
+            <h3>TRIQS &mdash; Library and Software Stack</h3>
             <p>
-              I am the lead developer of the
+              I lead the development of the
               <a
                 href="https://triqs.github.io"
                 rel="noreferrer noopener"
                 target="_blank"
                 >TRIQS</a
               >
-              open-source library, a <b>T</b>oolbox for <b>R</b>esearch in <b>I</b>nteracting <b>Q</b>uantum <b>S</b>ystems.
-              TRIQS provides various building blocks, such as Green functions, many-body operators, and Monte Carlo tools,
-              that facilitate high-performance implementations of algorithms to solve quantum many-body problems.
+              open-source library, a <b>T</b>oolbox for <b>R</b>esearch on <b>I</b>nteracting <b>Q</b>uantum <b>S</b>ystems.
+              It provides the building blocks, from Green functions to Monte Carlo tools, behind
+              more than 25 domain applications used by research groups worldwide. Its founding
+              papers have collected 900+ citations to date, and its annual community meetings
+              bring together over a hundred participants, in person and remotely.
             </p>
           </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <img class="image fit" src="images/TRIQS.png" alt="" />
+          <article class="col-6 col-12-xsmall work-item image-cell">
+            <img class="image fit" src="images/TRIQS.png" alt="TRIQS logo" width="732" height="499" loading="lazy" />
           </article>
           <article class="col-6 col-12-xsmall work-item">
-	    <h3>TRIQS Applications</h3>
+            <h3>TRIQS Applications</h3>
             <p>
               <a
                 href="https://triqs.github.io/triqs/latest/applications.html"
@@ -207,34 +185,114 @@
                 target="_blank"
                 >TRIQS applications</a
               >
-              assemble the building blocks provided by the TRIQS library into a high-performance implementations of
-              Many-Body algorithms. These implementations include various flavors of embedding methods (e.g. TRILEX),
-              impurity solvers, analytic continuation tools and interfaces to community codes.
-              I have developed and worked on a large number TRIQS applications.
+              assemble the library's building blocks into complete many-body algorithms, from
+              quantum impurity solvers such as
+              <a
+                href="https://github.com/TRIQS/ctint"
+                rel="noreferrer noopener"
+                target="_blank"
+                >CT-INT</a>
+              through embedding methods like TRILEX to interfaces that connect TRIQS with
+              electronic-structure and other community codes. The applications are where our stack
+              meets everyday research, and where most results are produced.
             </p>
           </article>
-          <article class="col-6 col-12-xsmall work-item">
-            <img class="image fit" src="images/TRILEX.png" alt="" />
-            <center><i>TRILEX Self-Consistency Loop</i></center>
+          <article class="col-6 col-12-xsmall work-item image-cell">
+            <img class="image fit" src="images/TRILEX.png" alt="Self-consistency loop of the TRILEX method" width="800" height="557" loading="lazy" style="margin-bottom: 0.5em;" />
+            <div style="text-align: center;"><i>TRILEX Self-Consistency Loop</i></div>
           </article>
           <article class="col-6 col-12-xsmall work-item">
-            <h3>NDA Multi-dimensional Array Library</h3>
+            <h3>nda &mdash; N-dimensional Array Library</h3>
             <p>
-              I am the lead developer of
               <a
                 href="https://github.com/TRIQS/nda"
                 rel="noreferrer noopener"
                 target="_blank"
                 >nda</a
-              >
-              , a C++ library providing an efficient and flexible multi-dimensional array class.
-              NDA is coded in C++20 using concepts, and is an essential building-block of the TRIQS project.
-              Some features of the library include lazy expression evaluation, lightweight view-types,
-              as well as HDF5, MPI, GPU and BLAS/Lapack support.
+              >, the C++23 library for N-dimensional arrays that I lead, is an essential building block
+              of TRIQS and is used well beyond it at the Flatiron Institute. It offers lazy
+              expressions, lightweight views, and HDF5, MPI, and BLAS/LAPACK support, with GPU
+              acceleration via library backends to cuBLAS, cuSOLVER, cuTENSOR, and MAGMA.
             </p>
           </article>
+          <article class="col-6 col-12-xsmall work-item image-cell">
+            <img class="image fit" src="images/NDA.png" alt="Code example showing array creation, access, and slicing with nda" width="800" height="508" loading="lazy" />
+          </article>
+          <article class="col-12 work-item">
+            <h3>Core Libraries &amp; Tools</h3>
+            <p>
+              Not all of my work stays inside TRIQS. Underneath the stack sit
+              <a href="https://github.com/TRIQS/h5" rel="noreferrer noopener" target="_blank">h5</a>,
+              <a href="https://github.com/TRIQS/mpi" rel="noreferrer noopener" target="_blank">mpi</a>, and
+              <a href="https://github.com/TRIQS/itertools" rel="noreferrer noopener" target="_blank">itertools</a>,
+              compact C++ libraries covering HDF5 file I/O, MPI communication, and range utilities.
+              They carry no dependency on TRIQS and can be used on their own. The C++/Python
+              bindings come from
+              <a href="https://github.com/flatironinstitute/clair" rel="noreferrer noopener" target="_blank">clair</a>
+              and
+              <a href="https://github.com/flatironinstitute/c2py" rel="noreferrer noopener" target="_blank">c2py</a>,
+              developed with colleagues as the successor to cpp2py; TRIQS 4.0 ported the entire
+              ecosystem to them.
+            </p>
+          </article>
+          <article class="col-12 work-item image-cell">
+            <img
+              class="image fit"
+              src="images/CommunityMeeting.jpg"
+              alt="Participants of the TRIQS Community Meeting 2026 outside the venue in Paris"
+              width="1400"
+              height="788"
+              loading="lazy"
+              style="margin-bottom: 0.5em;"
+            />
+            <div style="text-align: center;">
+              <i>TRIQS Community Meeting, Paris, July 2026</i>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Research -->
+      <section id="research">
+        <h2>Research</h2>
+        <div class="row">
           <article class="col-6 col-12-xsmall work-item">
-            <img class="image fit" src="images/NDA.png" alt="" />
+            <h3>Quantum Embedding</h3>
+            <p>
+              Quantum embedding methods such as Dynamical Mean-Field Theory (DMFT)
+              describe a solid in terms of an atom embedded in its electronic environment,
+              and have led to major advances in our understanding of strongly correlated materials.
+              I work on extensions of DMFT that capture non-local correlations, from cluster
+              methods to vertex-based embedding schemes such as TRILEX and eMBEX.
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item image-cell">
+            <img class="image fit" src="images/Embedding.png" alt="A small cluster of interacting sites embedded in a larger lattice" width="898" height="666" loading="lazy" />
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Impurity Solvers</h3>
+            <p>
+              In quantum impurity models, a few atomic degrees of freedom interact with a reservoir
+              of electrons. Solving them numerically is hard, and often the computational bottleneck
+              of embedding methods like DMFT. I work on algorithms and implementations of quantum
+              impurity solvers, ranging from continuous-time quantum Monte Carlo to exact
+              diagonalization and tensor networks.
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item image-cell">
+            <img class="image fit" src="images/SIAM.png" alt="Sketch of a quantum impurity coupled to a bath" width="990" height="736" loading="lazy" />
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Vertex Functions</h3>
+            <p>
+              Vertex functions encode the effective interactions between particles in many-body
+              systems. Their size and computational cost make them numerically challenging, yet they
+              are often crucial for describing properties such as high-temperature superconductivity.
+              My work here spans their compact representation, efficient computation, and use in
+              diagrammatic methods and response-function calculations.
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item image-cell">
+            <img class="image fit" src="images/Vertex.png" alt="Color map of a two-particle vertex function" width="800" height="669" loading="lazy" />
           </article>
         </div>
       </section>
@@ -243,98 +301,150 @@
         <h2>Selected Papers</h2>
         <div class="row">
           <div class="col-12 col-12-small">
-            <!-- TODO: Add your citations  -->
             <ol>
               <li>
-                <i
-		  >Linear resistivity and Sachdev-Ye-Kitaev (SYK) spin liquid behavior
-		  in a quantum critical metal with spin-1/2 fermions</i
-		><br>
+                <i>Tracking the Footprints of Spin Fluctuations: A Multi-Method, Multi-Messenger Study of the Two-Dimensional Hubbard Model</i><br>
+                T. Schäfer, N. Wentzell, F. Šimkovic IV, Y.-Y. He, C. Hille, M. Klett, C. J. Eckhardt, B. Arzhang, V. Harkov, F.-M. Le Régent, A. Kirsch, Y. Wang, A. J. Kim, E. Kozik, E. A. Stepanov, A. Kauch, S. Andergassen, P. Hansmann, D. Rohe, Y. M. Vilk, J. P. F. LeBlanc, S. Zhang, A.-M. S. Tremblay, M. Ferrero, O. Parcollet, and A. Georges<br>
+                <a
+                  href="https://doi.org/10.1103/PhysRevX.11.011058"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  class="button primary icon xsmall solid fa-external-link-alt"
+                  >Phys. Rev. X 11, 011058 (2021)</a
+                >
+              </li>
+              <li>
+                <i>Linear resistivity and Sachdev-Ye-Kitaev (SYK) spin liquid behavior in a quantum critical metal with spin-1/2 fermions</i><br>
                 P. Cha, N. Wentzell, O. Parcollet, A. Georges, and E.-A. Kim<br>
-		<a
-		  href="https://pnas.org/doi/full/10.1073/pnas.2003179117"
-		  rel="noreferrer noopener"
-		  target="_blank"
-		  class="button primary icon xsmall solid fa-external-link-alt"
-		  >Proc. Natl. Acad. Sci. U.S.A. 117, 18341</a
-		>
-              </li> 
-              <li>
-                <i
-                  >Tracking the Footprints of Spin Fluctuations: A MultiMethod,
-		  MultiMessenger Study of the Two-Dimensional Hubbard Model</i
-		><br>
-                T. Schäfer, N. Wentzell, F. Šimkovic, IV, Y.-Y. He,
-		C. Hille, M. Klett, C. J. Eckhardt, B. Arzhang,
-		V. Harkov, F.-M. Le Régent, A. Kirsch, Y. Wang,
-		A. J. Kim, E. Kozik, E. A. Stepanov, A. Kauch,
-		S. Andergassen, P. Hansmann, D. Rohe, Y. M. Vilk,
-		J. P. F. LeBlanc, S. Zhang, A.-M. S. Tremblay, M. Ferrero,
-		O. Parcollet, and A. Georges<br>
-		<a
-		  href="https://link.aps.org/doi/10.1103/PhysRevX.11.011058"
-		  rel="noreferrer noopener"
-		  target="_blank"
-		  class="button primary icon xsmall solid fa-external-link-alt"
-		  >Physical Review X 11, 011058</a
-		>
+                <a
+                  href="https://doi.org/10.1073/pnas.2003179117"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  class="button primary icon xsmall solid fa-external-link-alt"
+                  >Proc. Natl. Acad. Sci. U.S.A. 117, 18341 (2020)</a
+                >
               </li>
               <li>
-                <i
-		  >High-frequency asymptotics of the vertex function:
-		  Diagrammatic parametrization and algorithmic implementation</i
-		><br>
-                N. Wentzell, G. Li, A. Tagliavini, C. Taranto, G. Rohringer,
-		K. Held, A. Toschi, and S. Andergassen<br>
-		<a
-		  href="https://link.aps.org/doi/10.1103/PhysRevB.102.085106"
-		  rel="noreferrer noopener"
-		  target="_blank"
-		  class="button primary icon xsmall solid fa-external-link-alt"
-		  >Physical Review B 102, 085106</a
-		>
+                <i>Distinct spin and orbital dynamics in Sr<sub>2</sub>RuO<sub>4</sub></i><br>
+                H. Suzuki, L. Wang, J. Bertinshaw, H. U. R. Strand, S. Käser, M. Krautloher, Z. Yang, N. Wentzell, O. Parcollet, F. Jerzembeck, N. Kikugawa, A. P. Mackenzie, A. Georges, P. Hansmann, H. Gretarsson, and B. Keimer<br>
+                <a
+                  href="https://doi.org/10.1038/s41467-023-42804-3"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  class="button primary icon xsmall solid fa-external-link-alt"
+                  >Nat. Commun. 14, 7042 (2023)</a
+                >
               </li>
               <li>
-                <i
-		  >Efficient implementation of the parquet equations: Role of the
-		  reducible vertex function and its kernel approximation</i
-		><br>
-                G. Li, N. Wentzell, P. Pudleiner, P. Thunström, and K. Held<br>
-		<a
-		  href="https://link.aps.org/doi/10.1103/PhysRevB.93.165103"
-		  rel="noreferrer noopener"
-		  target="_blank"
-		  class="button primary icon xsmall solid fa-external-link-alt"
-		  >Physical Review B 93, 165103</a
-		>
+                <i>High-frequency asymptotics of the vertex function: Diagrammatic parametrization and algorithmic implementation</i><br>
+                N. Wentzell, G. Li, A. Tagliavini, C. Taranto, G. Rohringer, K. Held, A. Toschi, and S. Andergassen<br>
+                <a
+                  href="https://doi.org/10.1103/PhysRevB.102.085106"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  class="button primary icon xsmall solid fa-external-link-alt"
+                  >Phys. Rev. B 102, 085106 (2020)</a
+                >
               </li>
               <li>
-                <i
-                  >Correlated starting points for the functional renormalization group</i
-		><br>
-                N. Wentzell, C. Taranto, A. Katanin, A. Toschi, and S. Andergassen<br>
-		<a
-		  href="https://link.aps.org/doi/10.1103/PhysRevB.91.045120"
-		  rel="noreferrer noopener"
-		  target="_blank"
-		  class="button primary icon xsmall solid fa-external-link-alt"
-		  >Physical Review B 91, 045120</a
-		>
+                <i>Conductivity in the square lattice Hubbard model at high temperatures: importance of vertex corrections</i><br>
+                J. Vučičević, J. Kokalj, R. Žitko, N. Wentzell, D. Tanasković, and J. Mravlje<br>
+                <a
+                  href="https://doi.org/10.1103/PhysRevLett.123.036601"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  class="button primary icon xsmall solid fa-external-link-alt"
+                  >Phys. Rev. Lett. 123, 036601 (2019)</a
+                >
               </li>
             </ol>
+            <p>
+              23 journal articles (PRX, PNAS, Nat. Commun., PRL, PRB, Phys. Rev. Research,
+              Comput. Phys. Commun., J. Open Source Softw., SciPost Phys. Codebases) &middot; 1,200+ citations
+              &middot; h-index 15 (Google Scholar, August 2026)
+            </p>
             <ul class="actions">
-              <!-- TODO: Add link to database of all papers -->
+              <li>
+                <a
+                  href="https://scholar.google.com/citations?user=9IRL-ygAAAAJ"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  class="button"
+                  >All publications (Google Scholar)</a
+                >
+              </li>
               <li>
                 <a
                   href="https://orcid.org/0000-0003-3613-007X"
                   rel="noreferrer noopener"
                   target="_blank"
                   class="button"
-                  >All Publications</a
+                  >ORCID</a
                 >
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <!-- Teaching & Mentoring -->
+      <section id="teaching">
+        <h2>Teaching &amp; Mentoring</h2>
+        <div class="row">
+          <div class="col-12 col-12-small">
+            <p>
+              I founded the TRIQS Summer School (2023, 2025; 50+ students). I have taught TRIQS
+              tutorials at the International Summer School on Computational Quantum Materials in
+              Sherbrooke since 2018, as well as at the Simons Many-Electron Summer School at Stony
+              Brook and the Arnold Sommerfeld School.
+            </p>
+            <p>
+              At the Flatiron Institute I supervise Research Fellows, from their day-to-day
+              technical work through to career advice, and I advise colleagues on many aspects of
+              scientific software development in modern C++. I previously co-organized the
+              institute-wide
+              <a href="https://sciware.flatironinstitute.org/" rel="noreferrer noopener" target="_blank">Sciware</a>
+              seminars, and lately I have been leading a working group on how agentic coding tools
+              fit into research software. You may also run into me at CppCon.
+            </p>
+          </div>
+          <article class="col-12 work-item">
+            <img
+              class="image fit"
+              src="images/SherbrookeSchool.jpg"
+              alt="Participants of the International Summer School on Computational Quantum Materials, Sherbrooke 2026"
+              width="1400"
+              height="621"
+              loading="lazy"
+              style="margin-bottom: 2.5em;"
+            />
+            <div class="row">
+              <div class="col-6 col-12-xsmall">
+                <img
+                  class="image fit"
+                  src="images/SherbrookeTutorial1.jpg"
+                  alt="TRIQS tutorial at the Sherbrooke summer school, seen from the back of the lecture hall"
+                  width="900"
+                  height="506"
+                  loading="lazy"
+                  style="margin-bottom: 0.5em;"
+                />
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <img
+                  class="image fit"
+                  src="images/SherbrookeTutorial2.jpg"
+                  alt="Participants working on their laptops during a TRIQS tutorial at the Sherbrooke summer school"
+                  width="900"
+                  height="506"
+                  loading="lazy"
+                  style="margin-bottom: 0.5em;"
+                />
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <i>International Summer School on Computational Quantum Materials, Sherbrooke, 2026</i>
+            </div>
+          </article>
         </div>
       </section>
       <!-- Contact -->
@@ -347,7 +457,7 @@
                 <h3 class="icon solid fa-home">
                   <span class="label">Address</span>
                 </h3>
-                <a href="http://flatironinstitute.org">Flatiron Institute</a
+                <a href="https://flatironinstitute.org" rel="noreferrer noopener" target="_blank">Flatiron Institute</a
                 ><br />
                 162 Fifth Avenue<br />
                 New York, NY 10010<br />
@@ -357,23 +467,30 @@
                 <h3 class="icon solid fa-envelope">
                   <span class="label">Email</span>
                 </h3>
-                <!-- TODO: Add email -->
-                <a href="mailto:USER_EMAIL"
+                <a href="mailto:nwentzell@flatironinstitute.org"
                   >nwentzell@flatironinstitute.org</a
                 >
               </li>
             </ul>
             <ul class="icons">
-              <!-- TODO: Add your social media handles here -->
-              <!-- Other icons are available here: https://fontawesome.com/v4.7/icons/ just change the fa-tag -->
               <li>
-                <a href="https://github.com/wentzell" class="icon brands fa-github"
-                  ><span class="label">Github</span></a
+                <a href="https://github.com/wentzell" class="icon brands fa-github" title="GitHub" rel="noreferrer noopener" target="_blank"
+                  ><span class="label">GitHub</span></a
                 >
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/nils-wentzell/" class="icon brands fa-linkedin"
-                  ><span class="label">Linkedin</span></a
+                <a href="https://www.linkedin.com/in/nils-wentzell/" class="icon brands fa-linkedin" title="LinkedIn" rel="noreferrer noopener" target="_blank"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a href="https://scholar.google.com/citations?user=9IRL-ygAAAAJ" class="icon solid fa-graduation-cap" title="Google Scholar" rel="noreferrer noopener" target="_blank"
+                  ><span class="label">Google Scholar</span></a
+                >
+              </li>
+              <li>
+                <a href="https://orcid.org/0000-0003-3613-007X" class="icon solid fa-id-card" title="ORCID" rel="noreferrer noopener" target="_blank"
+                  ><span class="label">ORCID</span></a
                 >
               </li>
             </ul>
@@ -391,7 +508,7 @@
           id="logo"
           rel="noreferrer noopener"
         >
-          <img src="images/Flatiron+Institute_white.svg" alt="logo" id="logo-icon" style="border-radius: 0;" />
+          <img src="images/Flatiron+Institute_white.svg" alt="Flatiron Institute" id="logo-icon" style="border-radius: 0;" />
         </a>
       </div>
     </footer>
@@ -404,12 +521,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- TODO: Remove if not using Mathjax -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script
-      id="MathJax-script"
-      async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-    ></script>
   </body>
 </html>

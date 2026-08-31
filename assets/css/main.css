@@ -1,5 +1,4 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 @font-face {
   font-family: "Univers Next W01";
   src: url("https://www.simonsfoundation.org/app/themes/simonsfoundation/dist/fonts/63aa74f9-a724-4074-85c7-4167c0448227.eot?#iefix");
@@ -223,7 +222,7 @@ input,
 select,
 textarea {
   color: #666;
-  font-family: "Univers Next W01", Helvetica, Ariel, sans-serif;
+  font-family: "Univers Next W01", Helvetica, Arial, sans-serif;
   font-size: 16pt;
   font-weight: 300;
   line-height: 1.75em;
@@ -1547,8 +1546,8 @@ header h6 + p {
   margin-top: -0.6em;
   line-height: 1.5em;
 }
-header.major h2 {
-  font-size: 1.75m;
+header.major h1 {
+  font-size: 1.75em;
   color: #537eba;
 }
 
@@ -2193,7 +2192,7 @@ input[type=button].xsmall,
   font-size: 0.8em;
   height: calc(1.25em + 6px);
   line-height: 1.25;
-  padding: 0 0;
+  padding: 0 0.75em;
   min-width: 5em;
   margin-left: 0.3em;
 }
@@ -2253,6 +2252,7 @@ input[type=button]:disabled,
 }
 .work-item h3 {
   font-size: 1em;
+  font-weight: 500;
   margin: 0 0 0.5em 0;
 }
 .work-item p {
@@ -2889,7 +2889,7 @@ article.special {
     text-align: center;
   }
 
-  header.major h2 {
+  header.major h1 {
     font-size: 1.35em;
     margin-top: 1.5em;
   }
@@ -2941,3 +2941,24 @@ article.special {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* Site-specific fixes (2026-08-31) */
+img {
+  height: auto;
+}
+.image-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image-cell .image.fit {
+  margin: 0;
+}
+#header {
+  overflow-y: auto;
+}
+#papers .button {
+  white-space: normal;
+  height: auto;
+  line-height: 1.6;
+}
